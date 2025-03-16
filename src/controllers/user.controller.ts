@@ -10,8 +10,6 @@ export class UserController {
   }
 
   async contact(req: Request, res: Response, next: NextFunction) {
-    console.log('soy el controller');
-    console.log(req.body);
     try {
       if (!req.body)
         throw new HttpError(
